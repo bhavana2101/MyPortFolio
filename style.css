@@ -11,7 +11,31 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+#progress{
+    background-color: black;
+    position: fixed;
+    bottom:20px;
+    right:10px;
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+    cursor: pointer;
+}
 
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width:calc(100% - 15px);
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color:black;
+}
 nav{
     height: 17vh;
     font-size: 2rem;
