@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/a11d727409.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Bhavana</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skillset</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-----------------------------Hamburger Menu--------------->
+    <nav id="ham-navbar">
+        <div class="logo">Bhavana</div>
+        <div class="ham-menu">
+            <div class="ham-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="ham-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skillset</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------Profile Section--------------->
+    <div class="cont">
+        <div class="profile-cont">
+            <div class="profile-pic">
+                <img src="./Assets/Pic.jpg" alt="" width="330px" height="330px" style="border-radius: 50%;">
+            </div>
+            <div class="profile-txt">
+                <div class="l1"><p>Hi I'm</p></div>
+                <div class="l2"><h1>Bhavana</h1></div>
+                <div class="l3"><p>Student</p></div>
+                <div class="l4">
+                    <button class="b1">Download CV</button>
+                    <button class="b2">Contact Info</button>
+                </div>
+                <div class="l5">
+                    <div class="icon"><a href="https://www.linkedin.com/in/g-bhavana-42278b1bb/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="icon"><a href="https://github.com/bhavana2101"><i class="fa-brands fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------About Section------------------------->
+    <div class="about-top" id="about">
+        <div class="about-h1"><p>Get to know more</p></div>
+        <div class="about-h2"><h1>About Me</h1></div>
+    </div>
+    <div class="about-main">
+        <div class="about-pic">
+            <img src="./Assets/About.jpg" alt="" height="320px" width="320px" style="border-radius: 10%;">
+        </div>
+
+        <div class="about-txt">
+            <hr width="100%" color="black" size="2px">
+            <p><b>Greetings!</b> I am a final year student pursuing a Bachelor's degree in Computer Science and Engineering. 
+
+                I am proficient in Java and Python. 
+                My programming skills extend to the domains of Machine Learning,
+                 where I have a solid foundation in the basics, 
+                 along with hands-on experience in libraries such as NumPy, Pandas, Matplotlib, and OpenCV.
+                
+                In addition to my backend prowess, I have honed my skills in front-end development, creating engaging and user-friendly interfaces.
+                 This intersection of technical expertise allows me to bridge the gap between design and functionality seamlessly.
+                Currently, I am embarking on a valuable internship experience to further enrich my practical knowledge. 
+                As I navigate this pivotal phase, I am actively seeking a challenging position where I can contribute my skills and passion for technology to make a meaningful impact.
+                
+                <br><b>Thank you for visiting my portfolio, and I look forward to the exciting opportunities that lie ahead!</b></p>
+                <hr width="100%" color="black" size="2px">
+        </div>
+    </div>
+
+
+    <!-----------------------------Skillset------------------------>
+    <div class="about-top" id="skills">
+        <div class="about-h1"><p>Explore my</p></div>
+        <div class="about-h2"><h1>Skillset</h1></div>
+    </div>
+    <div class="skill">
+        <div class="sec1">
+            <div class="heading">Frontend Development</div>
+            <div class="skill-names">
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>CSS</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Javascript</h3>
+                        <p>Basic</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Git</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Bootstrap</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>SQL</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sec1">
+            <div class="heading">Machine Learning</div>
+            <div class="skill-names">
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Basic Concepts</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Numpy</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Pandas</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Maplotlib</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>OpenCV</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Tensor Flow</h3>
+                        <p>Basic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec1">
+            <div class="heading">Languages</div>
+            <div class="skill-names">
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Java</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>Python</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="s1">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="skill-text">
+                        <h3>C programming</h3>
+                        <p>Basic</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------Projects------------------------->
+    <div class="about-top" id="projects">
+        <div class="about-h1"><p>Browse my recent</p></div>
+        <div class="about-h2"><h1>Projects</h1></div>
+    </div>
+    <div class="main-cont">
+        <div class="proj-cont">
+            <div class="project">
+                <div class="pic">
+                    <img src="./Assets/p1.png" alt="" height="300px" width="300px" style="border-radius: 10%;">
+                </div>
+                <div class="title">
+                    <h3>Calories Burnt Prediction</h3>
+                </div>
+                <div class="btns">
+                    <button>Github</button>
+                    <button>Colab</button>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="pic">
+                    <img src="./Assets/amazonclone.jpg.png" alt="" height="300px" width="300px" style="border-radius: 10%;">
+                </div>
+                <div class="title">
+                    <h3>Amazon Clone</h3>
+                </div>
+                <div class="btns">
+                    <button>Github</button>
+                    <button>Live</button>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <div class="pic">
+                    <img src="./Assets/port.png" alt="" height="300px" width="300px" style="border-radius: 10%;">
+                </div>
+                <div class="title">
+                    <h3>Portfolio</h3>
+                </div>
+                <div class="btns">
+                    <button>Github</button>
+                    <button>Live</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------Contact Me----------------------->
+    <div class="about-top" id="contact">
+        <div class="about-h1"><p>Get in touch</p></div>
+        <div class="about-h2"><h1>Contact Me</h1></div>
+    </div>
+    <div class="contact">
+        <div class="cont-cont">
+            <div class="mail">
+                <a href="mailto:bhavanaguntur333@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp;bhavanaguntur333@gmail.com</a>
+            </div>
+            <div class="linkedln">
+                <a href="https://www.linkedin.com/in/g-bhavana-42278b1bb/"><i class="fa-brands fa-linkedin"></i>&nbsp;Linkedln</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+/* Importing some google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+nav{
+    height: 17vh;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav, .nav-links{
+    display: flex;
+}
+
+.nav-links{
+    list-style: none;
+    gap:2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(181,181,181);
+    text-underline-offset: 1.5rem;
+    color: grey;
+}
+
+/* Ham Navbar */
+
+#ham-navbar{
+    display: none;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.ham-menu{
+    display: inline-block;
+    position: relative;
+}
+
+.ham-icon{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width:30px;
+    height:24px;
+    cursor: pointer;
+}
+
+.ham-icon span{
+    width:100%;
+    height:3px;
+    background-color: black;
+    transition: all 3ms ease-in-out;
+}
+
+.ham-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    transition: all 3ms ease-in-out;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.ham-links a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 3ms ease-in-out;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.ham-links li{
+    list-style: none;
+}
+
+.ham-links.open{
+    max-height: 300px;
+}
+
+.ham-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);
+}
+
+.ham-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.ham-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+.ham-icon span:first-child{
+    transform: none;
+}
+
+.ham-icon span:nth-child(2){
+    opacity: 1;
+}
+
+.ham-icon span:last-child{
+    transform: none;
+}
+
+/* Profile Container Section */
+
+.cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 610px;
+}
+
+.profile-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    text-align: center;
+    width: 60%;
+}
+
+.profile-pic{
+    width: 300px;
+}
+
+.profile-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    height:300px;
+    width:40%;
+}
+
+.profile-txt p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(100,100,100);
+}
+
+.l2 h1{
+    font-size: 2.1rem;
+}
+
+.l4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.l4 button{
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.l4 button:first-child{
+    background-color: white;
+    color: black;
+}
+.l4 button:last-child{
+    background-color: black;
+    color: white;
+}
+
+.l4 button:first-child:hover{
+    background-color: black;
+    color: white;
+}
+
+.l5{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+.icon i{
+    padding: 10px;
+    font-size: larger;
+}
+
+/*About Top Section*/
+.about-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 10vh;
+    margin:10px 0;
+}
+.about-h1 p{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.about-h2 h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:570px;
+    padding: 20px;
+}
+
+.about-txt{
+    width:50%;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-edu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    height:50%;
+    align-items: center;
+    padding: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    justify-content: space-evenly;
+    padding: 15px; /* Adjusted padding for better spacing */
+}
+
+.sec1 {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%; /* Adjusted width for better spacing on desktop */
+    min-height: 200px; /* Minimum height for small devices */
+    height: auto; /* Allow sections to take only the required height */
+    margin: 0 10px 20px; /* Added margin between sections */
+}
+
+.heading {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skill-names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px; /* Adjusted padding for smaller screens */
+}
+
+.s1 {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    width: 100%; /* Make each s1 take full width */
+    justify-content: flex-start; /* Align items to the start of the container */
+}
+
+.skill-icon {
+    margin-right: 10px;
+}
+
+.skill-text {
+    margin-left: 10px;
+}
+
+/* Common styles for all devices */
+.main-cont {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-cont {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid grey;
+    height: 70%;
+    width: 26%;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+
+.btns button {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+.btns button:hover {
+    background-color: black;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+/* Contact Section */
+.contact{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:60%;
+    border-radius: 30px;
+    border: 2px solid grey;
+    height: 40%;
+}
+
+.cont-cont a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0.7;
+}
+.cont-cont a:hover{
+    color: black;
+    opacity: 1;
+}

@@ -1,0 +1,165 @@
+@media screen and (max-width:1200px) {
+    #navbar{
+        display: none;
+    }
+    #ham-navbar{
+        display: flex;
+    }
+}
+
+/* Mobile devices */
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+    .cont {
+        flex-direction: column;
+        height: auto;
+        align-items: center; /* Align the content in the center horizontally */
+    }
+
+    .profile-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-cont {
+        width: 100%;
+        height: auto;
+        flex-direction: column; /* Stacking profile-pic and profile-txt vertically */
+    }
+
+    .profile-txt {
+        width: 100%;
+        margin-top: 10px; /* Added margin for spacing */
+        text-align: center; /* Align text in the center */
+    }
+
+    .l2 h1 {
+        font-size: 2rem;
+    }
+
+    .l4 {
+        display: flex;
+        flex-direction: column; /* Align buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+        margin-top: 10px; /* Added margin for spacing */
+    }
+
+    .l4 button {
+        margin-bottom: 10px; /* Added margin between buttons */
+        width: calc(100% - 20px); /* Adjusted width for full container width with spacing */
+    }
+
+    .l5 {
+        display: flex;
+        justify-content: space-around; /* Updated to space-around */
+        width: 100%;
+        margin-top: 10px; /* Added margin for spacing */
+    }
+
+    .icon i {
+        padding: 5px;
+        width: calc(33.33% - 5px); /* Adjusted to take 33.33% of the container width with a 10px gap */
+    }
+}
+
+/* About Section */
+
+
+        /* About Section Media Queries */
+
+        /* Small devices (portrait phones, less than 600px) */
+        @media only screen and (max-width: 600px) {
+            .about-top {
+                height: auto;
+            }
+
+            .about-main {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .about-txt {
+                width: 100%;
+                margin: 0;
+            }
+
+            .about-h2 h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 601px to 1024px) */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            .about-h2 h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+
+/* Skills Section */
+@media only screen and (max-width: 1200px) {
+    .sec1 {
+        width: 45%; /* Adjusted width for smaller screens */
+        margin: 0 0 20px; /* Margin between sections for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sec1 {
+        width: 80%; /* Adjusted width for smaller screens */
+        margin: 0 0 20px; /* Margin between sections for smaller screens */
+    }
+}
+
+/* Projects Section */
+@media only screen and (max-width: 1200px) {
+    .main-cont{
+        height:auto;
+    }
+    .proj-cont {
+        width: 90%;
+    }
+
+    .project {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-cont{
+        height:auto;
+    }
+    .proj-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* Contact Section */
+@media only screen and (max-width: 768px){
+    .cont-cont{
+        font-size: 1.2rem;
+        border:none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cont-cont a{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .cont-cont{
+        border:none;
+        font-size: 1.2rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cont-cont a{
+        font-size: 1rem;
+    }
+}
